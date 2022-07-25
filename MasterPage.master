@@ -1,0 +1,52 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>ONLINE JOB PORTAL</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body text="#ffffff">
+    <form id="form1" runat="server">
+    <div id="page">
+	    <div id="logo" align="center">
+		    <h1>
+                Online Job Portal
+            </h1>
+	    </div>
+	    <hr />
+	</div>
+	    <marquee><font size="5" color="#837669"><i>The Official Job Site </i></font></marquee>
+    <div id="header-wrapper">
+	    <div id="header">   
+		    <div id="menu">
+			    <ul>
+			        <li>
+				        <a href="jobseeker_profile.aspx">My Profile</a>
+				    </li>
+				    <li>
+				        <a href="search_job.aspx">Search Job</a>
+				    </li>
+				    <li>
+                        <a href="Homepage.aspx">Sign Out</a>
+				    </li>
+			    </ul>
+		    </div>
+	    </div>
+	</div>
+	
+	    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <p>
+                <br />
+            </p>
+        </asp:ContentPlaceHolder>    
+    
+    <div id="footer" align="center">
+	    <p>Copyright (c) 2010 Sitename.com. All rights reserved. &nbsp; Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+    </div>
+    </form>
+</body>
+</html>
+
+
+        
